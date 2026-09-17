@@ -1,0 +1,22 @@
+{
+  "name": "默认水墨",
+  "description": "随应用提供的淡墨纸色皮肤，可在皮肤设置中切换",
+  "colors": {
+    "background": "#F7F4EC",
+    "surface": "#FFFDF8",
+    "primary": "#74543A",
+    "secondary": "#9B7A52",
+    "text": "#29241F",
+    "border": "#DED5C8",
+    "mutedText": "#756D64",
+    "onPrimary": "#FFFFFF",
+    "error": "#A84438",
+    "success": "#3F6E58"
+  },
+  "appearance": {
+    "cardRadius": 14,
+    "inputRadius": 12,
+    "buttonRadius": 10,
+    "cardElevation": 0
+  }
+}

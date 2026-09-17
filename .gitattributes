@@ -1,0 +1,2 @@
+assets/data/poetry_items_full.json filter=lfs diff=lfs merge=lfs -text
+Aatime/chinese-dictionary-main/word/word.json filter=lfs diff=lfs merge=lfs -text

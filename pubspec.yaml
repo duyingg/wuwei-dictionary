@@ -1,0 +1,62 @@
+name: wuwei_dictionary
+description: 五味字典——离线中文单字典、汉字学习与传统文化应用
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  characters: ^1.3.0
+  flutter_riverpod: ^2.5.1
+  go_router: ^14.2.0
+  shared_preferences: ^2.3.2
+  path_drawing: ^1.0.1
+  file_picker: ^12.1.3
+  archive: ^4.2.0
+  hive_ce_flutter: ^2.3.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: assets/icon/app_icon.png
+    background_color: "#F7F2E8"
+    theme_color: "#111D24"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/feedback_qr.png
+    - assets/data/chinese_entries_v3.json
+    - assets/data/polyphonic_lessons.json
+    - assets/data/daily_content.json
+    - assets/data/culture_items_v2.json
+    - assets/data/poetry_items.json
+    - assets/data/poetry_items_full.json
+    - Aatime/makemeahanzi-master/svgs/
+    - Aatime/makemeahanzi-master/COPYING
+    - Aatime/makemeahanzi-master/LGPL
+    - Aatime/makemeahanzi-master/APL/english/ARPHICPL.TXT
+    - assets/data/opencc/STCharacters.txt
+    - assets/data/opencc/TSCharacters.txt
+    - assets/data/opencc/LICENSE
+    - assets/skins/bundled/丹阙鎏金.hanzi-skin
+    - assets/skins/bundled/华章正红.hanzi-skin
+    - assets/skins/bundled/鎏金墨玉-锦纹.hanzi-skin
+    - assets/skins/bundled/青篁晨露.hanzi-skin
+    - assets/skins/bundled/松月夜读.hanzi-skin
+    - Aatime/chinese-dictionary-main/LICENSE
+    - Aatime/chinese-poetry-master/LICENSE

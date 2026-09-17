@@ -1,0 +1,35 @@
+{
+    "name": "五味字典",
+    "short_name": "五味字典",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F7F2E8",
+    "theme_color": "#111D24",
+    "description": "五味字典——离线中文单字典、汉字学习与传统文化应用",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

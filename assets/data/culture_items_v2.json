@@ -1,0 +1,183 @@
+[
+  {
+    "id": "school-ru",
+    "category": "schools",
+    "title": "儒家",
+    "subtitle": "仁者爱人，克己复礼",
+    "summary": "代表人物：孔子、孟子、荀子",
+    "content": "儒家重视仁义礼智信，强调个人修养、家庭伦理与社会责任。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-dao",
+    "category": "schools",
+    "title": "道家",
+    "subtitle": "道法自然，无为而治",
+    "summary": "代表人物：老子、庄子",
+    "content": "道家以“道”为核心，强调顺应自然规律与精神自由。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-mo",
+    "category": "schools",
+    "title": "墨家",
+    "subtitle": "兼爱非攻，尚贤尚同",
+    "summary": "代表人物：墨子",
+    "content": "墨家主张兼爱、非攻、节用和尚贤，重视实践效用。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-fa",
+    "category": "schools",
+    "title": "法家",
+    "subtitle": "以法治国，赏罚分明",
+    "summary": "代表人物：韩非、商鞅、申不害",
+    "content": "法家强调法、术、势与治理效能。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-ming",
+    "category": "schools",
+    "title": "名家",
+    "subtitle": "辨名析理，察同异",
+    "summary": "代表人物：惠施、公孙龙",
+    "content": "名家关注名实关系、概念界限和辩论方法。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-yinyang",
+    "category": "schools",
+    "title": "阴阳家",
+    "subtitle": "阴阳消长，五行相生",
+    "summary": "代表人物：邹衍",
+    "content": "阴阳家以阴阳、五行解释自然、历法和人事变化。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-zongheng",
+    "category": "schools",
+    "title": "纵横家",
+    "subtitle": "合纵连横，因势设谋",
+    "summary": "代表人物：苏秦、张仪",
+    "content": "纵横家长于外交辩说、形势判断和国际策略。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-za",
+    "category": "schools",
+    "title": "杂家",
+    "subtitle": "兼儒墨，合名法",
+    "summary": "代表人物：吕不韦、尸佼",
+    "content": "杂家博采诸家所长，尝试建立综合性的治理与知识体系。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-nong",
+    "category": "schools",
+    "title": "农家",
+    "subtitle": "播百谷，劝耕桑",
+    "summary": "代表人物：许行",
+    "content": "农家重视农业生产、农时、土地和自给经济。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-xiaoshuo",
+    "category": "schools",
+    "title": "小说家",
+    "subtitle": "街谈巷语，道听途说",
+    "summary": "代表：稗官采集的民间言论",
+    "content": "小说家汇集民间故事、风俗与议论，保留社会生活的侧面记录。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-bing",
+    "category": "schools",
+    "title": "兵家",
+    "subtitle": "知己知彼，百战不殆",
+    "summary": "代表人物：孙武、吴起、孙膑",
+    "content": "兵家研究战争规律、组织策略、地形与谋略。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "school-yi",
+    "category": "schools",
+    "title": "医家",
+    "subtitle": "辨证论治，养生济人",
+    "summary": "代表人物：扁鹊、仓公",
+    "content": "医家累积疾病诊疗、药物、养生和生命观念方面的知识。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "other-surnames",
+    "category": "other",
+    "title": "百家姓",
+    "subtitle": "单姓与复姓蒙学读本",
+    "summary": "已导入姓氏原文和逐姓读音。",
+    "content": "赵钱孙李\n周吴郑王\n冯陈褚卫\n蒋沈韩杨\n朱秦尤许\n何吕施张\n孔曹严华\n金魏陶姜\n戚谢邹喻\n柏水窦章\n云苏潘葛\n奚范彭郎\n鲁韦昌马\n苗凤花方\n俞任袁柳\n酆鲍史唐\n费廉岑薛\n雷贺倪汤\n滕殷罗毕\n郝邬安常\n乐于时傅\n皮卞齐康\n伍余元卜\n顾孟平黄\n和穆萧尹\n姚邵湛汪\n祁毛禹狄\n米贝明臧\n计伏成戴\n谈宋茅庞\n熊纪舒屈\n项祝董梁\n杜阮蓝闵\n席季麻强\n贾路娄危\n江童颜郭\n梅盛林刁\n钟徐邱骆\n高夏蔡田\n樊胡凌霍\n虞万支柯\n昝管卢莫\n经房裘缪\n干解应宗\n丁宣贲邓\n郁单杭洪\n包诸左石\n崔吉钮龚\n程嵇邢滑\n裴陆荣翁\n荀羊於惠\n甄曲家封\n芮羿储靳\n汲邴糜松\n井段富巫\n乌焦巴弓\n牧隗山谷\n车侯宓蓬\n全郗班仰\n秋仲伊宫\n宁仇栾暴\n甘钭厉戎\n祖武符刘\n景詹束龙\n叶幸司韶\n郜黎蓟薄\n印宿白怀\n蒲邰从鄂\n索咸籍赖\n卓蔺屠蒙\n池乔阴鬱\n胥能苍双\n闻莘党翟\n谭贡劳逄\n姬申扶堵\n冉宰郦雍\n郤璩桑桂\n濮牛寿通\n边扈燕冀\n郏浦尚农\n温别庄晏\n柴瞿阎充\n慕连茹习\n宦艾鱼容\n向古易慎\n戈廖庾终\n暨居衡步\n都耿满弘\n匡国文寇\n广禄阙东\n欧殳沃利\n蔚越夔隆\n师巩厍聂\n晁勾敖融\n冷訾辛阚\n那简饶空\n曾母沙乜\n养鞠须丰\n巢关蒯相\n查后荆红\n游竺权逯\n盖益桓公\n万俟司马\n上官欧阳\n夏侯诸葛\n闻人东方\n赫连皇甫\n尉迟公羊\n澹台公冶\n宗政濮阳\n淳于单于\n太叔申屠\n公孙仲孙\n轩辕令狐\n钟离宇文\n长孙慕容\n鲜于闾丘\n司徒司空\n亓官司寇\n仉督子车\n颛孙端木\n巫马公西\n漆雕乐正\n壤驷公良\n拓跋夹谷\n宰父榖梁\n晋楚闫法\n汝鄢涂钦\n段干百里\n东郭南门\n呼延归海\n羊舌微生\n岳帅缑亢\n况后有琴\n梁丘左丘\n东门西门\n商牟佘佴\n伯赏南宫\n墨哈谯笪\n年爱阳佟\n第五言福\n百家姓终",
+    "readingContent": "赵(zhào) 钱(qián) 孙(sūn) 李(lǐ)\n周(zhōu) 吴(wú) 郑(zhèng) 王(wáng)\n冯(féng) 陈(chén) 褚(chǔ) 卫(wèi)\n蒋(jiǎng) 沈(shěn) 韩(hán) 杨(yáng)\n朱(zhū) 秦(qín) 尤(yóu) 许(xǔ)\n何(hé) 吕(lǚ) 施(shī) 张(zhāng)\n孔(kǒng) 曹(cáo) 严(yán) 华(huà)\n金(jīn) 魏(wèi) 陶(táo) 姜(jiāng)\n戚(qī) 谢(xiè) 邹(zōu) 喻(yù)\n柏(bǎi) 水(shuǐ) 窦(dòu) 章(zhāng)\n云(yún) 苏(sū) 潘(pān) 葛(gě)\n奚(xī) 范(fàn) 彭(péng) 郎(láng)\n鲁(lǔ) 韦(wéi) 昌(chāng) 马(mǎ)\n苗(miáo) 凤(fèng) 花(huā) 方(fāng)\n俞(yú) 任(rèn) 袁(yuán) 柳(liǔ)\n酆(fēng) 鲍(bào) 史(shǐ) 唐(táng)\n费(fèi) 廉(lián) 岑(cén) 薛(xuē)\n雷(léi) 贺(hè) 倪(ní) 汤(tāng)\n滕(téng) 殷(yīn) 罗(luó) 毕(bì)\n郝(hǎo) 邬(wū) 安(ān) 常(cháng)\n乐(yuè) 于(yú) 时(shí) 傅(fù)\n皮(pí) 卞(biàn) 齐(qí) 康(kāng)\n伍(wǔ) 余(yú) 元(yuán) 卜(bǔ)\n顾(gù) 孟(mèng) 平(píng) 黄(huáng)\n和(hé) 穆(mù) 萧(xiāo) 尹(yǐn)\n姚(yáo) 邵(shào) 湛(zhàn) 汪(wāng)\n祁(qí) 毛(máo) 禹(yǔ) 狄(dí)\n米(mǐ) 贝(bèi) 明(míng) 臧(zāng)\n计(jì) 伏(fú) 成(chéng) 戴(dài)\n谈(tán) 宋(sòng) 茅(máo) 庞(páng)\n熊(xióng) 纪(jì) 舒(shū) 屈(qū)\n项(xiàng) 祝(zhù) 董(dǒng) 梁(liáng)\n杜(dù) 阮(ruǎn) 蓝(lán) 闵(mǐn)\n席(xí) 季(jì) 麻(má) 强(qiáng)\n贾(jiǎ) 路(lù) 娄(lóu) 危(wēi)\n江(jiāng) 童(tóng) 颜(yán) 郭(guō)\n梅(méi) 盛(shèng) 林(lín) 刁(diāo)\n钟(zhōng) 徐(xú) 邱(qiū) 骆(luò)\n高(gāo) 夏(xià) 蔡(cài) 田(tián)\n樊(fán) 胡(hú) 凌(líng) 霍(huò)\n虞(yú) 万(wàn) 支(zhī) 柯(kē)\n昝(zǎn) 管(guǎn) 卢(lú) 莫(mò)\n经(jīng) 房(fáng) 裘(qiú) 缪(miào)\n干(gān) 解(xiè) 应(yīng) 宗(zōng)\n丁(dīng) 宣(xuān) 贲(bēn) 邓(dèng)\n郁(yù) 单(shàn) 杭(háng) 洪(hóng)\n包(bāo) 诸(zhū) 左(zuǒ) 石(shí)\n崔(cuī) 吉(jí) 钮(niǔ) 龚(gōng)\n程(chéng) 嵇(jī) 邢(xíng) 滑(huá)\n裴(péi) 陆(lù) 荣(róng) 翁(wēng)\n荀(xún) 羊(yáng) 於(yū) 惠(huì)\n甄(zhēn) 曲(qū) 家(jiā) 封(fēng)\n芮(ruì) 羿(yì) 储(chǔ) 靳(jìn)\n汲(jí) 邴(bǐng) 糜(mí) 松(sōng)\n井(jǐng) 段(duàn) 富(fù) 巫(wū)\n乌(wū) 焦(jiāo) 巴(bā) 弓(gōng)\n牧(mù) 隗(kuí) 山(shān) 谷(gǔ)\n车(chē) 侯(hóu) 宓(mì) 蓬(péng)\n全(quán) 郗(xī) 班(bān) 仰(yǎng)\n秋(qiū) 仲(zhòng) 伊(yī) 宫(gōng)\n宁(nìng) 仇(qiú) 栾(luán) 暴(bào)\n甘(gān) 钭(tǒu) 厉(lì) 戎(róng)\n祖(zǔ) 武(wǔ) 符(fú) 刘(liú)\n景(jǐng) 詹(zhān) 束(shù) 龙(lóng)\n叶(yè) 幸(xìng) 司(sī) 韶(sháo)\n郜(gào) 黎(lí) 蓟(jì) 薄(bó)\n印(yìn) 宿(sù) 白(bái) 怀(huái)\n蒲(pú) 邰(tái) 从(cóng) 鄂(è)\n索(suǒ) 咸(xián) 籍(jí) 赖(lài)\n卓(zhuó) 蔺(lìn) 屠(tú) 蒙(méng)\n池(chí) 乔(qiáo) 阴(yīn) 鬱(yù)\n胥(xū) 能(nài) 苍(cāng) 双(shuāng)\n闻(wén) 莘(shēn) 党(dǎng) 翟(zhái)\n谭(tán) 贡(gòng) 劳(láo) 逄(páng)\n姬(jī) 申(shēn) 扶(fú) 堵(dǔ)\n冉(rǎn) 宰(zǎi) 郦(lì) 雍(yōng)\n郤(xì) 璩(qú) 桑(sāng) 桂(guì)\n濮(pú) 牛(niú) 寿(shòu) 通(tōng)\n边(biān) 扈(hù) 燕(yān) 冀(jì)\n郏(jiá) 浦(pǔ) 尚(shàng) 农(nóng)\n温(wēn) 别(bié) 庄(zhuāng) 晏(yàn)\n柴(chái) 瞿(qú) 阎(yán) 充(chōng)\n慕(mù) 连(lián) 茹(rú) 习(xí)\n宦(huàn) 艾(ài) 鱼(yú) 容(róng)\n向(xiàng) 古(gǔ) 易(yì) 慎(shèn)\n戈(gē) 廖(liào) 庾(yǔ) 终(zhōng)\n暨(jì) 居(jū) 衡(héng) 步(bù)\n都(dū) 耿(gěng) 满(mǎn) 弘(hóng)\n匡(kuāng) 国(guó) 文(wén) 寇(kòu)\n广(guǎng) 禄(lù) 阙(quē) 东(dōng)\n欧(ōu) 殳(shū) 沃(wò) 利(lì)\n蔚(wèi) 越(yuè) 夔(kuí) 隆(lóng)\n师(shī) 巩(gǒng) 厍(shè) 聂(niè)\n晁(cháo) 勾(gōu) 敖(áo) 融(róng)\n冷(lěng) 訾(zǐ) 辛(xīn) 阚(kàn)\n那(nā) 简(jiǎn) 饶(ráo) 空(kōng)\n曾(zēng) 母(mǔ) 沙(shā) 乜(niè)\n养(yǎng) 鞠(jū) 须(xū) 丰(fēng)\n巢(cháo) 关(guān) 蒯(kuǎi) 相(xiàng)\n查(zhā) 后(hòu) 荆(jīng) 红(hóng)\n游(yóu) 竺(zhú) 权(quán) 逯(lù)\n盖(gài) 益(yì) 桓(huán) 公(gōng)\n万俟(mò qí) 司马(sī mǎ)\n上官(shàng guān) 欧阳(ōu yáng)\n夏侯(xià hóu) 诸葛(zhū gě)\n闻人(wén rén) 东方(dōng fāng)\n赫连(hè lián) 皇甫(huáng pǔ)\n尉迟(yù chí) 公羊(gōng yáng)\n澹台(tán tái) 公冶(gōng yě)\n宗政(zōng zhèng) 濮阳(pú yáng)\n淳于(chún yú) 单于(chán yú)\n太叔(tài shū) 申屠(shēn tú)\n公孙(gōng sūn) 仲孙(zhòng sūn)\n轩辕(xuān yuán) 令狐(lìng hú)\n钟离(zhōng lí) 宇文(yǔ wén)\n长孙(zhǎng sūn) 慕容(mù róng)\n鲜于(xiān yú) 闾丘(lǘ qiū)\n司徒(sī tú) 司空(sī kōng)\n亓官(qí guān) 司寇(sī kòu)\n仉督(zhǎng dū) 子车(zǐ jū)\n颛孙(zhuān sūn) 端木(duān mù)\n巫马(wū mǎ) 公西(gōng xī)\n漆雕(qī diāo) 乐正(yuè zhèng)\n壤驷(rǎng sì) 公良(gōng liáng)\n拓跋(tuò bá) 夹谷(jiá gǔ)\n宰父(zǎi fǔ) 榖梁(gǔ liáng)\n晋(jìn) 楚(chǔ) 闫(yán) 法(fǎ)\n汝(rǔ) 鄢(yān) 涂(tú) 钦(qīn)\n段干(duàn gān) 百里(bǎi lǐ)\n东郭(dōng guō) 南门(nán mén)\n呼延(hū yán) 归海(guī hǎi)\n羊舌(yáng shé) 微生(wēi shēng)\n岳(yuè) 帅(shuài) 缑(gōu) 亢(kàng)\n况(kuàng) 后(hòu) 有(yǒu) 琴(qín)\n梁丘(liáng qiū) 左丘(zuǒ qiū)\n东门(dōng mén) 西门(xī mén)\n商(shāng) 牟(móu) 佘(shé) 佴(nài)\n伯(bó) 赏(shǎng) 南宫(nán gōng)\n墨(mò) 哈(hǎ) 谯(qiáo) 笪(dá)\n年(nián) 爱(ài) 阳(yáng) 佟(tóng)\n第五(dì wǔ) 言(yán) 福(fú)\n百(bǎi) 家(jiā) 姓(xìng) 终(zhōng)",
+    "sourceId": "user-provided-baijiaxing"
+  },
+  {
+    "id": "other-placeholder-1440393",
+    "category": "other",
+    "title": "千字文",
+    "subtitle": "内容待导入",
+    "summary": "条目已建立，正文暂未实装。",
+    "content": "",
+    "sourceId": "placeholder"
+  },
+  {
+    "id": "other-placeholder-1307e21",
+    "category": "other",
+    "title": "三字经",
+    "subtitle": "内容待导入",
+    "summary": "条目已建立，正文暂未实装。",
+    "content": "",
+    "sourceId": "placeholder"
+  },
+  {
+    "id": "other-placeholder-229dd8b",
+    "category": "other",
+    "title": "道德经",
+    "subtitle": "内容待导入",
+    "summary": "条目已建立，正文暂未实装。",
+    "content": "",
+    "sourceId": "placeholder"
+  },
+  {
+    "id": "other-solar",
+    "category": "other",
+    "title": "二十四节气",
+    "subtitle": "四时流转与节气歌",
+    "summary": "完整收录二十四节气及大致公历时间。",
+    "content": "立春|2月3–5日\n雨水|2月18–20日\n惊蛰|3月5–7日\n春分|3月20–22日\n清明|4月4–6日\n谷雨|4月19–21日\n立夏|5月5–7日\n小满|5月20–22日\n芒种|6月5–7日\n夏至|6月21–22日\n小暑|7月6–8日\n大暑|7月22–24日\n立秋|8月7–9日\n处暑|8月22–24日\n白露|9月7–9日\n秋分|9月22–24日\n寒露|10月8–9日\n霜降|10月23–24日\n立冬|11月7–8日\n小雪|11月22–23日\n大雪|12月6–8日\n冬至|12月21–23日\n小寒|1月5–7日\n大寒|1月20–21日\n\n节气歌\n春雨惊春清谷天，夏满芒夏暑相连。\n秋处露秋寒霜降，冬雪雪冬小大寒。\n每月两节不变更，最多相差一两天。\n上半年来六廿一，下半年是八廿三。\n",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "other-festival",
+    "category": "other",
+    "title": "传统节日",
+    "subtitle": "按年内时序排列",
+    "summary": "左侧列节日，右侧列时间，暂不加解释。",
+    "content": "春节|农历正月初一\n人日|农历正月初七\n元宵节|农历正月十五\n填仓节|农历正月廿五\n龙抬头|农历二月初二\n花朝节|农历二月十二或十五\n上巳节|农历三月初三\n寒食节|清明前一或二日\n清明节|公历4月4–6日\n端午节|农历五月初五\n七夕节|农历七月初七\n中元节|农历七月十五\n中秋节|农历八月十五\n重阳节|农历九月初九\n寒衣节|农历十月初一\n下元节|农历十月十五\n冬至节|公历12月21–23日\n腊八节|农历腊月初八\n小年|农历腊月廿三或廿四\n除夕|农历腊月最后一日\n",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "other-allusion",
+    "category": "other",
+    "title": "典故",
+    "subtitle": "古籍故事与文化用语",
+    "summary": "认识成语和诗文背后的故事。",
+    "content": "典故是具有出处的故事或词句，常被后世文章引用。后续可按人物、时代和主题扩展。",
+    "sourceId": "app-original"
+  },
+  {
+    "id": "other-title",
+    "category": "other",
+    "title": "古代称谓",
+    "subtitle": "姓名、亲属与礼貌称呼",
+    "summary": "读懂古文中的人物关系。",
+    "content": "古代称谓因身份、年龄、关系和场合而异。理解称谓有助于把握文献中的礼仪与人物关系。",
+    "sourceId": "app-original"
+  }
+]

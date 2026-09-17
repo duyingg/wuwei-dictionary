@@ -1,0 +1,100 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+import '../features/culture/culture_pages.dart';
+import '../features/dictionary/dictionary_pages.dart';
+import '../features/home/home_page.dart';
+import '../features/index_search/index_search_page.dart';
+import '../features/learning/learning_pages.dart';
+import '../features/profile/profile_pages.dart';
+import 'app_routes.dart';
+import 'app_shell.dart';
+
+final _rootNavigatorKey = GlobalKey<NavigatorState>();
+
+final appRouter = GoRouter(
+  navigatorKey: _rootNavigatorKey,
+  initialLocation: AppRoutes.home,
+  routes: [
+    StatefulShellRoute.indexedStack(
+      builder: (context, state, shell) => AppShell(navigationShell: shell),
+      branches: [
+        StatefulShellBranch(routes: [
+          GoRoute(path: AppRoutes.home, builder: (_, __) => const HomePage())
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(
+              path: AppRoutes.learning,
+              builder: (_, __) => const LearningPage())
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(
+              path: AppRoutes.culture, builder: (_, __) => const CulturePage())
+        ]),
+        StatefulShellBranch(routes: [
+          GoRoute(
+              path: AppRoutes.profile, builder: (_, __) => const ProfilePage())
+        ]),
+      ],
+    ),
+    GoRoute(
+        path: AppRoutes.characterPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, state) =>
+            CharacterDetailPage(value: state.pathParameters['value']!)),
+    GoRoute(
+        path: AppRoutes.indexPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, state) => IndexSearchPage(
+            type:
+                IndexSearchType.values.byName(state.pathParameters['type']!))),
+    GoRoute(
+        path: AppRoutes.learningToday,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const TodayCharacterPage()),
+    GoRoute(
+        path: AppRoutes.learningFavorites,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const FavoritesPage()),
+    GoRoute(
+        path: AppRoutes.learningGuess,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const GuessCharacterPage()),
+    GoRoute(
+        path: AppRoutes.learningSentence,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const SentencePage()),
+    GoRoute(
+        path: AppRoutes.learningPolyphonic,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const PolyphonicLearningPage()),
+    GoRoute(
+        path: AppRoutes.cultureDetailPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, state) =>
+            CultureDetailPage(id: state.pathParameters['id']!)),
+    GoRoute(
+        path: AppRoutes.poetryDetailPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, state) =>
+            PoetryDetailPage(id: state.pathParameters['id']!)),
+    GoRoute(
+        path: AppRoutes.settingsPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        redirect: (_, state) => state.pathParameters['kind'] == 'display'
+            ? AppRoutes.settingsGeneral
+            : null,
+        builder: (_, state) =>
+            SettingsPage(kind: state.pathParameters['kind']!)),
+    GoRoute(
+        path: AppRoutes.informationPattern,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, state) =>
+            InformationPage(kind: state.pathParameters['kind']!)),
+    GoRoute(
+        path: AppRoutes.history,
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (_, __) => const SearchHistoryPage()),
+  ],
+  errorBuilder: (_, __) => const Scaffold(body: Center(child: Text('页面不存在'))),
+);
