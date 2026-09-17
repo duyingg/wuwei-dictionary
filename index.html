@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="五味字典隐私政策：说明应用对本地数据、文件导入和反馈问卷的处理方式。">
+  <meta name="theme-color" content="#102b4e">
+  <title>五味字典隐私政策</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102b4e'/%3E%3Cpath d='M13 17c9-3 15 0 19 5 4-5 10-8 19-5v31c-8-2-14 0-19 5-5-5-11-7-19-5z' fill='%23f5ead2'/%3E%3Cpath d='M32 22v31' stroke='%23c89b45' stroke-width='2'/%3E%3Cpath d='M25 29h14M25 36h14M25 43h14' stroke='%23b3261e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8f2e6;
+      --paper-deep: #efe2c8;
+      --ink: #172131;
+      --muted: #66707d;
+      --navy: #102b4e;
+      --red: #a9302a;
+      --gold: #c89b45;
+      --green: #2f6f5e;
+      --line: rgba(16, 43, 78, .15);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 6%, rgba(200,155,69,.18), transparent 26rem),
+        linear-gradient(180deg, #fffdf8 0, var(--paper) 44rem, #f4ead7 100%);
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Microsoft YaHei", serif;
+      font-size: 17px;
+      line-height: 1.85;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .35;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+    }
+    a { color: var(--green); text-underline-offset: .2em; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: var(--navy);
+      border-bottom: 4px solid var(--gold);
+    }
+    .hero::after {
+      content: "隐私";
+      position: absolute;
+      right: max(4vw, 1.5rem);
+      bottom: -3.5rem;
+      color: rgba(255,255,255,.045);
+      font-size: clamp(8rem, 26vw, 18rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -.08em;
+    }
+    .hero-inner, main, footer { width: min(880px, calc(100% - 2rem)); margin-inline: auto; }
+    .hero-inner { position: relative; z-index: 1; padding: 4.6rem 0 4rem; }
+    .brand { display: flex; align-items: center; gap: .7rem; color: #ead7ac; font-size: .9rem; letter-spacing: .16em; }
+    .seal { display: grid; place-items: center; width: 2.2rem; aspect-ratio: 1; border: 1px solid #d9b86e; color: #f6dfad; font-weight: 700; }
+    h1 { margin: 1.35rem 0 .45rem; font-size: clamp(2.25rem, 8vw, 4.8rem); line-height: 1.12; letter-spacing: .04em; font-weight: 700; }
+    .lead { max-width: 42rem; margin: 0; color: #d8e0e9; font-family: system-ui, sans-serif; font-size: 1rem; line-height: 1.75; }
+    .meta { display: flex; flex-wrap: wrap; gap: .55rem 1.3rem; margin-top: 1.6rem; color: #b9c5d1; font-family: system-ui, sans-serif; font-size: .86rem; }
+    main { position: relative; padding: 2.4rem 0 4.5rem; }
+    .summary {
+      margin: 0 0 2rem;
+      padding: 1.25rem 1.4rem;
+      border: 1px solid rgba(47,111,94,.24);
+      border-left: 4px solid var(--green);
+      border-radius: 0 14px 14px 0;
+      background: rgba(255,255,255,.62);
+      box-shadow: 0 15px 45px rgba(16,43,78,.06);
+    }
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .7rem;
+      margin: 2rem 0 3rem;
+      font-family: system-ui, sans-serif;
+    }
+    .toc a { padding: .72rem .9rem; border: 1px solid var(--line); border-radius: 10px; color: var(--navy); background: rgba(255,255,255,.5); text-decoration: none; }
+    .toc a:hover, .toc a:focus-visible { border-color: var(--gold); background: #fff; outline: none; }
+    section { scroll-margin-top: 1rem; margin: 0 0 2.7rem; }
+    h2 { display: flex; align-items: baseline; gap: .75rem; margin: 0 0 .75rem; color: var(--navy); font-size: 1.45rem; line-height: 1.45; }
+    h2::before { content: attr(data-no); color: var(--red); font-family: Georgia, serif; font-size: .85rem; letter-spacing: .06em; }
+    p { margin: .6rem 0; }
+    ul { margin: .65rem 0; padding-left: 1.4rem; }
+    li { margin: .45rem 0; }
+    strong { color: var(--navy); }
+    .notice { padding: 1rem 1.2rem; border-radius: 12px; background: rgba(200,155,69,.12); }
+    footer { padding: 1.4rem 0 2.6rem; border-top: 1px solid var(--line); color: var(--muted); font-family: system-ui, sans-serif; font-size: .86rem; text-align: center; }
+    @media (max-width: 680px) {
+      body { font-size: 16px; line-height: 1.78; }
+      .hero-inner { padding: 3.4rem 0 3.1rem; }
+      .toc { grid-template-columns: 1fr 1fr; }
+      main { padding-top: 1.5rem; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      body::before, .hero::after, .toc { display: none; }
+      .hero { color: #000; background: #fff; border-bottom: 2px solid #000; }
+      .hero-inner { padding: 1rem 0; }
+      .brand, .lead, .meta { color: #222; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand"><span class="seal" aria-hidden="true">五味</span><span>五味字典 · WUWEI DICTIONARY</span></div>
+      <h1>隐私政策</h1>
+      <p class="lead">我们把数据边界说清楚：五味字典的核心功能可离线使用，个人使用记录默认只保存在您的设备上。</p>
+      <div class="meta"><span>运营者：duyingg</span><span>适用版本：1.0.1</span><span>生效及更新日期：2026年9月17日</span></div>
+    </div>
+  </header>
+
+  <main>
+    <p class="summary"><strong>概要：</strong>五味字典无需注册账号，不含广告、应用内购买或统计分析 SDK，不会主动把您的搜索记录、收藏、设备标识、通讯录、位置、照片或音频上传至服务器。</p>
+
+    <nav class="toc" aria-label="政策目录">
+      <a href="#scope">适用范围</a><a href="#collection">信息处理</a><a href="#local">本地数据</a>
+      <a href="#files">文件导入</a><a href="#feedback">反馈问卷</a><a href="#rights">您的权利</a>
+    </nav>
+
+    <section id="scope">
+      <h2 data-no="01">适用范围</h2>
+      <p>本政策适用于“五味字典”移动应用当前版本，说明应用在提供汉字查询、收藏、历史记录、界面设置、皮肤及数据导入、使用反馈等功能时如何处理信息。</p>
+    </section>
+
+    <section id="collection">
+      <h2 data-no="02">我们不主动收集的信息</h2>
+      <p>五味字典不要求您创建账号，不接入广告、会员、应用内购买或用户画像服务。应用不会主动收集或上传以下信息：</p>
+      <ul>
+        <li>姓名、手机号码、电子邮箱、身份证件等身份信息；</li>
+        <li>设备标识、通讯录、精确位置、相册、录音或摄像内容；</li>
+        <li>搜索词、收藏、浏览历史、设置偏好或您导入的文件内容。</li>
+      </ul>
+      <p>核心字典数据随应用提供，日常查字不要求连接网络。</p>
+    </section>
+
+    <section id="local">
+      <h2 data-no="03">保存在设备上的数据</h2>
+      <p>为实现您选择的功能，应用可能在本机保存搜索历史（启用时最多保留 100 条）、收藏内容、界面与功能设置，以及您主动导入的皮肤或数据。这些内容仅用于在本机恢复使用状态，不会由五味字典主动上传。</p>
+      <p>您可使用应用内的数据管理或设置功能清理相应记录；清除应用数据或卸载应用也会移除本地数据。卸载前，请自行备份仍需保留的内容。</p>
+    </section>
+
+    <section id="files">
+      <h2 data-no="04">文件选择与导入</h2>
+      <p>导入皮肤或数据时，应用仅在您主动操作后调用系统文件选择器，并读取您明确选择的文件，以完成导入和本地保存。应用不会静默扫描其他目录，也不会把所选文件上传到五味字典的服务器。</p>
+      <p>建议只导入来源可信、格式符合说明的文件，以免出现显示异常或数据损坏。</p>
+    </section>
+
+    <section id="feedback">
+      <h2 data-no="05">使用反馈与第三方服务</h2>
+      <p>应用会展示问卷星反馈问卷的二维码和可复制链接。只有在您主动扫码、复制链接并通过浏览器或其他应用访问时，才会进入第三方服务。第三方可能依据其自身规则处理您提交的内容和必要的访问日志，五味字典无法控制该处理过程。</p>
+      <p class="notice">请勿在反馈中提交身份证号码、银行账户、精确住址、健康状况等敏感个人信息。访问前可查阅问卷星的相关隐私规则。</p>
+    </section>
+
+    <section id="sharing">
+      <h2 data-no="06">对外提供、转让与公开披露</h2>
+      <p>由于五味字典不主动收集或上传上述个人信息，我们不会出售这些信息，也不会将其提供、转让或公开披露给其他主体。法律法规另有要求的，按适用规定处理。</p>
+    </section>
+
+    <section id="security">
+      <h2 data-no="07">数据安全</h2>
+      <p>本地数据受您的设备系统和锁屏措施保护。请妥善保管设备，并及时安装可信的系统安全更新。任何安全措施都无法保证绝对安全；如发现与本应用有关的异常，请通过反馈问卷告知我们。</p>
+    </section>
+
+    <section id="children">
+      <h2 data-no="08">未成年人使用</h2>
+      <p>五味字典不提供账号系统，也不以未成年人个人信息为运营目的。未成年人应在监护人指导下使用应用；提交反馈前，应由监护人确认内容中不含不必要的个人信息。</p>
+    </section>
+
+    <section id="rights">
+      <h2 data-no="09">您的选择与权利</h2>
+      <p>您可以随时查看或清理应用内历史与收藏、恢复或调整设置、通过系统管理应用权限、删除导入内容，或通过清除应用数据和卸载应用终止本地处理。如需提出疑问、意见或与隐私有关的请求，请使用应用内的反馈问卷联系我们。</p>
+    </section>
+
+    <section id="changes">
+      <h2 data-no="10">政策更新</h2>
+      <p>如果应用功能、数据处理方式或适用规则发生重要变化，我们会更新本页面的日期和内容，并在必要时通过应用版本说明等适当方式提示。更新后的政策自标注的生效日期起适用。</p>
+    </section>
+
+    <section id="site">
+      <h2 data-no="11">本政策页面</h2>
+      <p>本页面的代码不设置 Cookie，也不使用广告或统计分析脚本。页面托管服务可能为保障访问、安全和运维产生必要的技术日志，该类处理由相应托管服务按其规则负责。</p>
+    </section>
+  </main>
+
+  <footer>五味字典 · duyingg · 隐私政策版本 1.0（2026年9月17日）</footer>
+</body>
+</html>
