@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:wuwei_dictionary/app/app.dart';
 import 'package:wuwei_dictionary/app/providers.dart';
+import 'package:wuwei_dictionary/core/privacy/privacy_policy.dart';
 import 'package:wuwei_dictionary/features/data/repositories.dart';
 import 'package:wuwei_dictionary/features/dictionary/dictionary_pages.dart';
 import 'package:wuwei_dictionary/features/domain/models.dart';
@@ -61,7 +62,25 @@ class _CharacterTestRepository extends _IndexTestRepository {
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({
         PreferencesKeys.bundledSkinsSeeded: true,
+        PrivacyPolicy.acceptedKey: true,
       }));
+
+  testWidgets('首次启动显示隐私提示且确认后记录同意状态', (tester) async {
+    SharedPreferences.setMockInitialValues({
+      PreferencesKeys.bundledSkinsSeeded: true,
+    });
+    await tester.pumpWidget(const ProviderScope(child: DictionaryApp()));
+    await tester.pump(const Duration(seconds: 1));
+
+    expect(find.text('隐私政策提示'), findsOneWidget);
+    expect(find.text('查看完整政策'), findsOneWidget);
+    await tester.tap(find.text('同意并继续'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('隐私政策提示'), findsNothing);
+    final preferences = await SharedPreferences.getInstance();
+    expect(preferences.getBool(PrivacyPolicy.acceptedKey), isTrue);
+  });
 
   testWidgets('底部四页可切换并显示无内购声明', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: DictionaryApp()));

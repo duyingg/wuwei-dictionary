@@ -1,6 +1,8 @@
-# 五味字典
+# 五味字典（Five-Flavor Dictionary）
 
 五味字典是一款以手机端为主要使用场景的离线中文单字典应用，提供单字查询、拼音与部首索引、笔顺展示、多音字学习、诗词与传统文化内容，并支持导入和切换皮肤。
+
+隐私政策：[在线阅读](https://www.duyingg.com/Five-Flavor%20Dictionary/privacy) · [网页源码](docs/privacy/index.html)
 
 ## 主要功能
 

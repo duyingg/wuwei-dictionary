@@ -10,10 +10,10 @@ import '../features/profile/profile_pages.dart';
 import 'app_routes.dart';
 import 'app_shell.dart';
 
-final _rootNavigatorKey = GlobalKey<NavigatorState>();
+final rootNavigatorKey = GlobalKey<NavigatorState>();
 
 final appRouter = GoRouter(
-  navigatorKey: _rootNavigatorKey,
+  navigatorKey: rootNavigatorKey,
   initialLocation: AppRoutes.home,
   routes: [
     StatefulShellRoute.indexedStack(
@@ -39,48 +39,48 @@ final appRouter = GoRouter(
     ),
     GoRoute(
         path: AppRoutes.characterPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, state) =>
             CharacterDetailPage(value: state.pathParameters['value']!)),
     GoRoute(
         path: AppRoutes.indexPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, state) => IndexSearchPage(
             type:
                 IndexSearchType.values.byName(state.pathParameters['type']!))),
     GoRoute(
         path: AppRoutes.learningToday,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const TodayCharacterPage()),
     GoRoute(
         path: AppRoutes.learningFavorites,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const FavoritesPage()),
     GoRoute(
         path: AppRoutes.learningGuess,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const GuessCharacterPage()),
     GoRoute(
         path: AppRoutes.learningSentence,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const SentencePage()),
     GoRoute(
         path: AppRoutes.learningPolyphonic,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const PolyphonicLearningPage()),
     GoRoute(
         path: AppRoutes.cultureDetailPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, state) =>
             CultureDetailPage(id: state.pathParameters['id']!)),
     GoRoute(
         path: AppRoutes.poetryDetailPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, state) =>
             PoetryDetailPage(id: state.pathParameters['id']!)),
     GoRoute(
         path: AppRoutes.settingsPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         redirect: (_, state) => state.pathParameters['kind'] == 'display'
             ? AppRoutes.settingsGeneral
             : null,
@@ -88,12 +88,12 @@ final appRouter = GoRouter(
             SettingsPage(kind: state.pathParameters['kind']!)),
     GoRoute(
         path: AppRoutes.informationPattern,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, state) =>
             InformationPage(kind: state.pathParameters['kind']!)),
     GoRoute(
         path: AppRoutes.history,
-        parentNavigatorKey: _rootNavigatorKey,
+        parentNavigatorKey: rootNavigatorKey,
         builder: (_, __) => const SearchHistoryPage()),
   ],
   errorBuilder: (_, __) => const Scaffold(body: Center(child: Text('页面不存在'))),

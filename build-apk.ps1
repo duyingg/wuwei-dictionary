@@ -295,7 +295,7 @@ try {
         } else {
             $apk.BaseName.Replace('app-', '').Replace('-release', '')
         }
-        $targetName = "wuwei-dictionary-$version-$variant-$timestamp.apk"
+        $targetName = "five-flavor-dictionary-$version-$variant-$timestamp.apk"
         $targetPath = Join-Path $outputRoot $targetName
         Copy-Item -LiteralPath $apk.FullName -Destination $targetPath -Force
         $hash = (Get-FileHash -LiteralPath $targetPath -Algorithm SHA256).Hash.ToLowerInvariant()
@@ -329,7 +329,7 @@ try {
         workingTree = $workingTree
         artifacts = $manifestEntries
     }
-    $manifestPath = Join-Path $outputRoot "wuwei-dictionary-$version-$timestamp.build.json"
+    $manifestPath = Join-Path $outputRoot "five-flavor-dictionary-$version-$timestamp.build.json"
     $manifest | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $manifestPath -Encoding UTF8
 
     Write-Host "`nAPK build completed: $outputRoot" -ForegroundColor Green

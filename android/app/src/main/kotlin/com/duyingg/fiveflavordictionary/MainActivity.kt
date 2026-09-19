@@ -1,4 +1,4 @@
-package com.duyingg.wuweidictionary
+package com.duyingg.fiveflavordictionary
 
 import io.flutter.embedding.android.FlutterActivity
 

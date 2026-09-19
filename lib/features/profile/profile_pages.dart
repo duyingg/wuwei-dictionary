@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../app/app_routes.dart';
 import '../../app/providers.dart';
 import '../../core/design/app_theme.dart';
 import '../../core/design/bundled_skin_loader.dart';
 import '../../core/design/skin_package_loader.dart';
+import '../../core/privacy/privacy_policy.dart';
 import '../../core/widgets/committed_slider.dart';
 import '../../core/widgets/common_widgets.dart';
 import '../../core/widgets/skin_widgets.dart';
@@ -33,6 +35,12 @@ class ProfilePage extends ConsumerWidget {
     ('查询历史', Icons.history, AppRoutes.history, 'profile.history'),
     ('数据管理', Icons.storage_outlined, AppRoutes.settingsData, 'profile.data'),
     ('关于我们', Icons.info_outline, AppRoutes.informationAbout, 'profile.about'),
+    (
+      '隐私政策',
+      Icons.privacy_tip_outlined,
+      AppRoutes.informationPrivacy,
+      'profile.privacy'
+    ),
     ('使用帮助', Icons.help_outline, AppRoutes.informationHelp, 'profile.help'),
     (
       '反馈与建议',
@@ -744,11 +752,36 @@ class _InformationPageState extends State<InformationPage> {
     }
   }
 
+  Future<void> _openPrivacyPolicy() async {
+    final opened = await launchUrl(
+      Uri.parse(PrivacyPolicy.url),
+      mode: LaunchMode.externalApplication,
+    );
+    if (!opened) {
+      await Clipboard.setData(const ClipboardData(text: PrivacyPolicy.url));
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('无法打开浏览器，隐私政策链接已复制')),
+        );
+      }
+    }
+  }
+
+  Future<void> _copyPrivacyUrl() async {
+    await Clipboard.setData(const ClipboardData(text: PrivacyPolicy.url));
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('隐私政策链接已复制')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final title = switch (widget.kind) {
       'help' => '使用帮助',
       'feedback' => '反馈与建议',
+      'privacy' => '隐私政策',
       _ => '关于我们'
     };
     return Scaffold(
@@ -809,6 +842,43 @@ class _InformationPageState extends State<InformationPage> {
               const _HelpTile('如何导入全部唐诗宋词？',
                   '进入“我的 → 数据管理 → 导入诗词数据”，选择全部唐诗宋词。全量库较大，首次加载会更久。'),
               const _HelpTile('每日内容怎么切换？', '进入“我的 → 每日内容偏好”，可选文字、词语、成语或诗句。'),
+            ] else if (widget.kind == 'privacy') ...[
+              Icon(Icons.privacy_tip_outlined,
+                  size: 68, color: Theme.of(context).colorScheme.primary),
+              const SizedBox(height: 20),
+              Text('五味字典隐私政策',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headlineSmall),
+              const SizedBox(height: 14),
+              const Text(
+                '核心功能可离线使用，无需注册账号，不含广告或统计分析 SDK。搜索历史、收藏、设置及您主动导入的内容默认只保存在本机。',
+                textAlign: TextAlign.center,
+                style: TextStyle(height: 1.7),
+              ),
+              const SizedBox(height: 20),
+              Card(
+                child: Column(children: [
+                  ListTile(
+                    leading: const Icon(Icons.open_in_browser),
+                    title: const Text('查看完整隐私政策'),
+                    subtitle: const Text('将在系统浏览器中打开'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: _openPrivacyPolicy,
+                  ),
+                  const Divider(height: 1, indent: 56),
+                  ListTile(
+                    leading: const Icon(Icons.copy),
+                    title: const SelectableText(PrivacyPolicy.url),
+                    subtitle: const Text('点击复制链接'),
+                    onTap: _copyPrivacyUrl,
+                  ),
+                ]),
+              ),
+              const SizedBox(height: 12),
+              const Text(
+                '政策版本：2026年9月17日',
+                textAlign: TextAlign.center,
+              ),
             ] else ...[
               const Text(
                 '扫描二维码填写《五味字典》使用反馈问卷，或复制下方链接在浏览器中打开。',

@@ -1,7 +1,7 @@
 name: wuwei_dictionary
 description: 五味字典——离线中文单字典、汉字学习与传统文化应用
 publish_to: "none"
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
@@ -17,6 +17,7 @@ dependencies:
   file_picker: ^12.1.3
   archive: ^4.2.0
   hive_ce_flutter: ^2.3.4
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:

@@ -26,6 +26,7 @@ abstract final class AppRoutes {
   static const informationAbout = '/info/about';
   static const informationHelp = '/info/help';
   static const informationFeedback = '/info/feedback';
+  static const informationPrivacy = '/info/privacy';
 
   static String character(String value) =>
       '/character/${Uri.encodeComponent(value)}';
